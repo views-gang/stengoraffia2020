@@ -553,3 +553,13 @@ p a:hover {
   border-right: 2px solid white;
 }
 
+
+.marquee-row {
+  padding-bottom: 4.2vw;
+  padding-top: 4.2vw;
+}
+
+
+.manifest-row, .who-row, .portfolio-row, .birzha-row{
+  padding-bottom: 7vw;
+}
