@@ -484,7 +484,7 @@ body {
  [class*="col-"] {
   float: left;
   margin: 0.6vw;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .row {
