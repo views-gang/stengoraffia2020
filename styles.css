@@ -484,7 +484,10 @@ body {
  [class*="col-"] {
   float: left;
   margin: 0.6vw;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .row {
@@ -509,7 +512,6 @@ p {
   font-family: 'PragmaticaFine', 'OpenSans', sans-serif;
   font-size: 1.85vw;
   line-height: 2.3vw;
-  padding-top: 2.8vw; 
 }
 
 p a {
