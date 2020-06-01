@@ -2,6 +2,6 @@
 
 Сайт фестиваля Стенограффия, который проходит в Екатеринбурге с 2010 года.
 
-Айдентика фестиваля, макет сайта: [Таисия Спирина](https://www.instagram.com/singularity.machine/), агентство StreetArt / [SPEKTR](https://www.instagram.com/spektr.space/).
+Дизайн и макет: [Таисия Спирина](https://www.instagram.com/singularity.machine/), агентство StreetArt / [SPEKTR](https://www.instagram.com/spektr.space/) / [HSIYA](https://www.instagram.com/hot.singles/).
 
-Вёрстка и все айтишные дела: [Викентий Вилка Стакан](https://www.instagram.com/vilkastakan/), банда ВЬЮС.
+Вёрстка и все айтишные дела: [Викентий Вилка Стакан](https://vlks.tk/n/), банда [ВЬЮС](https://views.rocks).

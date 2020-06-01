@@ -453,12 +453,12 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #0f0f0f !important;
   color: white; 
   overflow-x: hidden;
 
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 .container {
@@ -712,4 +712,9 @@ p a:hover {
   text-align: left;
   width: auto;
   margin: auto 0;
+}
+
+.sp-message {
+  color: white !important;
+
 }
