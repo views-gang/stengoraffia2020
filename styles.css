@@ -457,13 +457,12 @@ body {
   color: white; 
   overflow-x: hidden;
 
-  display: flex;
-  justify-content: center;
+  
 }
 
 .container {
-    width: 90%;
-    
+  width: 90%;  
+  margin: 0 auto;
 }
 
 .col-1 {grid-column: span 1;}
@@ -496,6 +495,31 @@ body {
 }
 
 
+.col-g-1 {grid-column: span 1;}
+.col-g-2 {grid-column: span 2;}
+.col-g-3 {grid-column: span 3;}
+.col-g-4 {grid-column: span 4;}
+.col-g-5 {grid-column: span 5;}
+.col-g-6 {grid-column: span 6;}
+.col-g-7 {grid-column: span 7;}
+.col-g-8 {grid-column: span 8;}
+.col-g-9 {grid-column: span 9;}
+.col-g-10 {grid-column: span 10;}
+
+
+ [class*="col-g-"] {
+  float: left;
+  margin: 0vw;
+  /*border: 1px solid green;*/
+}
+
+.row-g {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding-bottom: 0;
+}
+
+
 .col-sm-1 {grid-column: span 1;}
 .col-sm-2 {grid-column: span 2;}
 .col-sm-3 {grid-column: span 3;}
@@ -517,6 +541,7 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
+
 
 h1, h2 {
   font-size: 3.7vw;
@@ -579,9 +604,57 @@ p a:hover {
 
 
 .marquee-row {
-  padding-bottom: 4.2vw;
-  padding-top: 4.2vw;
+  height: 13vw;
+  background-image: url("./img/marq1.svg");
+  background-repeat: repeat-x;
+  background-size: 35vw;
+  animation: 10s anim1 infinite linear;
 }
+
+@keyframes anim1 {
+   from {
+      background-position: 0 center;
+   }
+   to {
+      background-position: 35vw center;
+   }
+}
+
+.marquee-2-row {
+  background-image: url("./img/marq2.svg");
+  background-repeat: repeat-x;
+  background-size: 65vw;
+  animation: 10s anim2 infinite linear;
+  height: 15vw;
+}
+
+@keyframes anim2 {
+   from {
+      background-position: 0 center;
+   }
+   to {
+      background-position: 65vw center;
+   }
+}
+
+.marquee-3-row {
+  background-image: url("./img/marq2.svg");
+  background-repeat: repeat-x;
+  background-size: 60vw;
+  animation: 12s anim3 infinite linear;
+  height: 15vw;
+}
+
+@keyframes anim3 {
+   from {
+      background-position: 3vw center;
+   }
+   to {
+      background-position: 63vw center;
+   }
+}
+
+
 
 
 .manifest-row, .who-row, .portfolio-row, .birzha-row, .volunteer-row, .mail-row{
@@ -640,11 +713,38 @@ p a:hover {
   max-height: 2.5vw;
 }
 
-.mailform {
-
+.button {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  cursor: pointer;
 }
 
+.button img {
+  margin: 0 auto;
+}
 
+.gallery {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.gallery-slider {
+  margin: 2vw 2vw;
+}
+
+.gallery-expl {
+  font-family: 'PragmaticaFine', 'OpenSans', sans-serif;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  padding-top: 2vw; 
+
+}
 
 .sp-force-hide {
   display: none;
@@ -718,3 +818,9 @@ p a:hover {
   color: white !important;
 
 }
+
+::selection {
+  color: #000000;
+  background-color: white;
+}
+
