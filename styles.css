@@ -824,3 +824,20 @@ p a:hover {
   background-color: white;
 }
 
+
+.preload-images {
+  visibility: hidden; 
+  width: 0;
+  height: 0;
+  background: url("./img/photo/1.jpg"),
+              url("./img/photo/2.jpg"),
+              url("./img/photo/3.jpg"),
+              url("./img/photo/4.jpg"),
+              url("./img/photo/5.jpg"),
+              url("./img/photo/6.jpg"),
+              url("./img/photo/7.jpg"),
+              url("./img/photo/8.jpg"),
+              url("./img/photo/9.jpg"),
+              url("./img/photo/10.jpg"),
+              url("./img/photo/11.jpg");
+}
