@@ -640,17 +640,17 @@ p a:hover {
 .marquee-3-row {
   background-image: url("./img/marq2.svg");
   background-repeat: repeat-x;
-  background-size: 60vw;
+  background-size: 65vw;
   animation: 12s anim3 infinite linear;
   height: 15vw;
 }
 
 @keyframes anim3 {
    from {
-      background-position: 3vw center;
+      background-position: 0vw center;
    }
    to {
-      background-position: 63vw center;
+      background-position: 65vw center;
    }
 }
 
@@ -825,6 +825,22 @@ p a:hover {
 }
 
 
+.partners {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2vw;
+  align-items: center;
+}
+
+.partners a img {
+}
+
+.partners a {
+  text-decoration: none;
+
+}
+
+
 .preload-images {
   visibility: hidden; 
   width: 0;
@@ -840,4 +856,23 @@ p a:hover {
               url("./img/photo/9.jpg"),
               url("./img/photo/10.jpg"),
               url("./img/photo/11.jpg");
+}
+
+[class*="overlay-"]  img {
+  width: 20vw !important;
+}
+
+.overlay-1 {
+  z-index: 444;
+  position: absolute;
+  top: 16vw;
+  left: 1.5vw;
+}
+
+
+.overlay-2 {
+  z-index: 444;
+  position: absolute;
+  top: 60vw;
+  left: 90vw;
 }
