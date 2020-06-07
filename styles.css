@@ -873,7 +873,7 @@ p a:hover {
 }
 
 [class*="overlay-"]  img {
-  width: 20vw !important;
+  width: 20vw;
 }
 
 .overlay-1 {
@@ -889,4 +889,15 @@ p a:hover {
   position: absolute;
   top: 60vw;
   left: 90vw;
+}
+
+.overlay-3 {
+  z-index: 444;
+  position: absolute;
+  top: 200vw;
+  left: 24vw;
+}
+
+.overlay-3 img {
+  width: 7vw !important;
 }
