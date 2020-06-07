@@ -549,6 +549,13 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+.partext {
+  font-size: 3.7vw;
+  font-family: 'Pragmatica', 'OpenSans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .numbers {
   font-size: 3.5vw;
   font-family: 'Pragmatica', 'OpenSans', sans-serif;
@@ -661,6 +668,13 @@ p a:hover {
   padding-bottom: 7vw;
 }
 
+.partners-row {
+  padding-bottom: 2vw;
+}
+
+.paricon-row {
+  padding-bottom: 7vw !important;
+}
 
 .no-underline a {
   text-decoration: none;
