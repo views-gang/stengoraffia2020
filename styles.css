@@ -598,8 +598,8 @@ p a:hover {
 }
 
 .header-row {
-  padding-top: 1vw;
-  padding-bottom: 1vw; 
+  padding-top: 4vw;
+  padding-bottom: 2vw; 
 }
 
 .instruction {
@@ -873,31 +873,106 @@ p a:hover {
 }
 
 [class*="overlay-"]  img {
-  width: 20vw;
+  width: 15vw;
 }
 
-.overlay-1 {
+[class*="overlay-"] {
   z-index: 444;
   position: absolute;
-  top: 16vw;
-  left: 1.5vw;
+}
+
+
+.overlay-1 {
+  top: 24vw;
+  left: 3.8vw;
 }
 
 
 .overlay-2 {
-  z-index: 444;
-  position: absolute;
-  top: 60vw;
-  left: 90vw;
+  top: 115vw;
+  left: 6vw;
 }
 
 .overlay-3 {
-  z-index: 444;
-  position: absolute;
-  top: 200vw;
-  left: 24vw;
+  top: 105vw;
+  left: 19vw;
 }
 
-.overlay-3 img {
-  width: 7vw !important;
+.overlay-4 {
+  top: 190vw;
+  left: 84vw;
+}
+
+.overlay-5 {
+  top: 270vw;
+  left: 2vw;
+}
+
+.overlay-6 {
+  top: 290vw;
+  left: 16vw;
+}
+
+.overlay-7 {
+  top: 340vw;
+  left: 92vw;
+}
+
+.overlay-8 {
+  top: 415vw;
+  left: 70vw;
+}
+
+.overlay-9 {
+  top: 540vw;
+  left: 21vw;
+}
+
+
+.overlay-10 {
+  top: 545vw;
+  left: -5vw;
+}
+
+
+.overlay-11 {
+  top: 700vw;
+  left: 80vw;
+}
+.overlay-12 {
+  top: 710vw;
+  left: 95vw;
+}
+
+
+.overlay-13 {
+  top: 780vw;
+  left: 17vw;
+}
+.overlay-14 {
+  top: 793vw;
+  left: 2vw;
+}
+
+
+.overlay-15 {
+  top: 413vw;
+  left: 85vw;
+}
+
+
+.overlay-16 {
+  top: 795vw;
+  left: 21vw;
+}
+
+
+.overlay-17 {
+  top: 924vw;
+  left: 80vw;
+}
+
+.overlay-18 {
+  top: 860vw;
+  left: 94.5vw;
 }

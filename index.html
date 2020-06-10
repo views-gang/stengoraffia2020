@@ -3,16 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>S—A.XI</title>
-		<link rel="stylesheet" href="./styles.css?ver=fon">
-		<script src="./rellax.js"></script>
+		<link rel="stylesheet" href="./styles.css?ver=parallax">
 	</head>
 	<body>
 		<div class="container">
-			<!--<div class="row header-row">
-															<div class="col-7"><span class="header">STENOGRAFFIA_FESTIVAL</span></div>
-															<div class="col-5 alright"><span class="header"><a href="#">PRESS</a> <a href="#">REVISION</a></span></div>
-			</div>-->
 			<div class="row header-row">
+				<div class="col-7"><span class="header">STENOGRAFFIA_FESTIVAL</span></div>
+				<div class="col-5 alright"><span class="header"><a href="/press">PRESS</a> <a href="http://fond.stenograffia.ru/">REVISION</a></span></div>
+			</div>
+			<div class="row">
 				<div class="col-12"><img src="./img/header.svg" alt="S—A.XI" width="100%"></div>
 			</div>
 		</div>
@@ -81,6 +80,10 @@
 			<div class="col-5 alright">15</div>
 			<div class="col-7">стран-участниц</div>
 		</div>
+		<!-- <div class="row numbers numbers-row">
+				<div class="col-5 alright">18</div>
+				<div class="col-7">звёздочек на сайте</div>
+		</div> -->
 	</div>
 	<div class="row marquee-3-row">
 		
@@ -162,27 +165,27 @@
 		</div>
 		<div class="col-1"></div>
 		<div class="col-8">
-			<iframe src="https://www.google.com/maps/d/embed?mid=1xyfqwKQ35Fc_DFLENugD0XhU-3k" width="100%" height="400vw"></iframe>	
+			<iframe src="https://www.google.com/maps/d/embed?mid=1xyfqwKQ35Fc_DFLENugD0XhU-3k" width="100%" height="400vw"></iframe>
 		</div>
-		</div>
-		<div class="row partners-row">
-			<div class="col-12 partext">Партнёры</div>
-			
-		</div>
+	</div>
+	<div class="row partners-row">
+		<div class="col-12 partext">Партнёры</div>
 		
-		<div class="row">
-			<div class="col-1"></div>
-			<div class="col-10">
-				<div class="partners">
+	</div>
+	
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-10">
+			<div class="partners">
 				<a href="http://www.eeel.center/"><img src="./img/el.png" style="height: 6vw !important;margin-top:-1vw"></a>
 				<a href="https://vk.com/about"><img src="./img/vk-brand.svg" style="height: 6vw !important"></a>
 				<a href="https://екатеринбург.рф/"><img src="./img/ekb.svg" style="height: 8vw !important;margin-top:-2vw"></a>
 				<a href="http://arton-paint.ru/"><img src="./img/arton.png" style="height: 14vw !important"></a>
 			</div>
-			</div>
 		</div>
-		<div class="row  paricon-row" >
-			<div class="col-12">
+	</div>
+	<div class="row  paricon-row" >
+		<div class="col-12">
 			<div class="partners">
 				<a href="http://streetart.su/"><img src="./img/streetart.svg" style="height: 4vw !important;margin-top:-1vw"></a>
 				<a href="https://interfax.ru"><img src="./img/interfax.svg" style="height: 5vw !important"></a>
@@ -190,14 +193,40 @@
 			</div>
 		</div>
 		
+	</div>
 </div>
-<div class="rellax overlay-1" data-rellax-speed="-4"><img src="./img/star.svg"></div>
-<div class="rellax overlay-2" data-rellax-speed="-2"><img src="./img/star.svg"></div>
-<div class="rellax overlay-3" data-rellax-speed="4"><img src="./img/exc.svg"></div>
+<div class="stars">
+	<div class="rellax overlay-1" toper="24"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-2" toper="115" speed="1.1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-3" toper="105"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-4" toper="190"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-5" toper="270"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-6" toper="290"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-7" toper="340"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-8" toper="440"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-9" toper="530"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-10" toper="545"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-11" toper="705"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-12" toper="713"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-13" toper="780"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-14" toper="793"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-15" toper="838"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-16" toper="883"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-17" toper="957"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-18" toper="966"><img src="./img/star.svg"></div>
+	
+</div>
 <div class="preload-images"></div>
 <script type="text/javascript">
-	var rellax = new Rellax('.rellax');
+function pxTOvw(value) {var w = window,d = document,e = d.documentElement,g = d.getElementsByTagName('body')[0],x = w.innerWidth || e.clientWidth || g.clientWidth;return (100*value)/x;};
+
+function parallax() {
+	Array.from(document.getElementsByClassName("rellax")).forEach((s) => {
+		s.style.top = s.getAttribute('toper') - pxTOvw(0.7*window.pageYOffset) + "vw";});
+	};
+window.addEventListener("scroll", function(){parallax()});
 	const photos = [
+			["./img/photo/11.jpg","Команда STENOGRAFFIA: Нейронный стрит-арт<br>2018", "Фото: Максим Лоскутов"],
 			["./img/photo/1.jpg","Rainessence: Стена ангелов<br>2019", "Фото: Григорий Постников"],
 			["./img/photo/2.jpg","Red Pepper Creative: Первый общественный хромакей<br>2018", "Фото: Дмитрий Чабанов"],
 			["./img/photo/3.jpg","Hot Singles in Your Area: Эта надпись<br>2019","Фото: Дмитрий Чабанов"],
@@ -207,8 +236,7 @@
 			["./img/photo/7.jpg","Андрей Люблинский: Красный человечек<br>2019", "Фото: Дмитрий Чабанов"],
 			["./img/photo/8.jpg","Покрас Лампас: Мета-супрематический крест<br>2019", "Фото: Григорий Постников"],
 			["./img/photo/9.jpg","Hot Singles in Your Area: Ctrl+X<br>2017", "Фото: Анна Христова"],
-			["./img/photo/10.jpg","Ampparito: Untitled<br>2019", "Фото: Дмитрий Чабанов"],
-			["./img/photo/11.jpg","Команда STENOGRAFFIA: Нейронный стрит-арт<br>2018", "Фото: Максим Лоскутов"]]
+			["./img/photo/10.jpg","Ampparito: Untitled<br>2019", "Фото: Дмитрий Чабанов"]]
 	const n = photos.length;
 	function showPhoto(ind) {
 		document.getElementById("photo-link").src=photos[ind][0];
