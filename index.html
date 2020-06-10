@@ -196,24 +196,24 @@
 	</div>
 </div>
 <div class="stars">
-	<div class="rellax overlay-1" toper="24"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-2" toper="115" speed="1.1"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-3" toper="105"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-4" toper="190"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-5" toper="270"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-6" toper="290"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-7" toper="340"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-8" toper="440"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-9" toper="530"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-10" toper="545"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-11" toper="705"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-12" toper="713"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-13" toper="780"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-14" toper="793"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-15" toper="838"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-16" toper="883"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-17" toper="957"><img src="./img/star.svg"></div>
-	<div class="rellax overlay-18" toper="966"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-1" toper="24" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-2" toper="115" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-3" toper="112"speed="1.3"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-4" toper="190" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-5" toper="305" speed="1.3"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-6" toper="290" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-7" toper="340" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-8" toper="440" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-9" toper="643" speed="1.5"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-10" toper="545" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-11" toper="850" speed="1.5"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-12" toper="713" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-13" toper="910" speed="1.4"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-14" toper="793" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-15" toper="838" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-16" toper="883" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-17" toper="957" speed="1"><img src="./img/star.svg"></div>
+	<div class="rellax overlay-18" toper="930" speed="0.9"><img src="./img/star.svg"></div>
 	
 </div>
 <div class="preload-images"></div>
@@ -222,7 +222,7 @@ function pxTOvw(value) {var w = window,d = document,e = d.documentElement,g = d.
 
 function parallax() {
 	Array.from(document.getElementsByClassName("rellax")).forEach((s) => {
-		s.style.top = s.getAttribute('toper') - pxTOvw(0.7*window.pageYOffset) + "vw";});
+		s.style.top = s.getAttribute('toper') - pxTOvw(0.7*window.pageYOffset*s.getAttribute('speed')) + "vw";});
 	};
 window.addEventListener("scroll", function(){parallax()});
 	const photos = [
