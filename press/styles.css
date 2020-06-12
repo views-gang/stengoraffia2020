@@ -398,7 +398,7 @@ START OF PROJECT
 
 @font-face {
   font-family: "OpenSansFine";
-  src: url("./fonts/OpenSans/OpenSans-300.ttf");
+  src: url("../fonts/OpenSans/OpenSans-300.ttf");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal
@@ -406,23 +406,16 @@ START OF PROJECT
 
 @font-face {
   font-family: "OpenSans";
-  src: url("./fonts/OpenSans/OpenSans-400.ttf");
+  src: url("../fonts/OpenSans/OpenSans-400.ttf");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal
 }
 
-@font-face {
-  font-family: "DecimaMonoX";
-  src: url("./fonts/DecimaMonoX/DecimaMonoX.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal
-}
 
 @font-face {
   font-family: "DecimaMonoXBold";
-  src: url("./fonts/DecimaMonoX/DecimaMonoX-Bold.ttf");
+  src: url("../fonts/DecimaMonoX/DecimaMonoX-Bold.ttf");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal
@@ -430,7 +423,7 @@ START OF PROJECT
 
 @font-face {
   font-family: "Pragmatica";
-  src: url("./fonts/Pragmatica/Pragmatica-Book.ttf");
+  src: url("../fonts/Pragmatica/Pragmatica-Book.ttf");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal
@@ -438,7 +431,7 @@ START OF PROJECT
 
 @font-face {
   font-family: "PragmaticaFine";
-  src: url("./fonts/Pragmatica/Pragmatica-Light.ttf");
+  src: url("../fonts/Pragmatica/Pragmatica-Light.ttf");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal
@@ -449,12 +442,12 @@ html {
   font-family: 'PragmaticaFine', 'OpenSans', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
-  color: white;
+  color: black;
 }
 
 body {
-  background-color: #0f0f0f !important;
-  color: white; 
+  background-color: white;
+  color: black; 
   overflow-x: hidden;
 
   
@@ -569,13 +562,40 @@ p {
 }
 
 p a {
-  color: white;
+  color: black;
 }
 p a:hover {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
+.press-header {
+  padding-bottom: 4vw;
+}
+
+li {
+  font-size: 1.85vw;
+  line-height: 2.3vw;
+  margin-left: -1vw;
+}
+
+li:before {
+    content: "• "; /* Добавляем в качестве маркера символ */
+   }
+
+.press-header::before {
+  position: absolute;
+  content: "";
+  height: 10vw;
+  width: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/press.svg);
+  z-index: 3;
+  margin-top: 9vw;
+  margin-left: -5vw;
+}
 
 .alright{
   text-align: right;
@@ -585,6 +605,12 @@ p a:hover {
   font-family: 'Pragmatica', 'OpenSans', sans-serif;
   font-size: 3.7vw;
   padding: 0 !important;
+}
+
+.red {
+  background-color: #FB3439;
+  color: white;
+  width: 100%;
 }
 
 .alright a {
@@ -600,70 +626,29 @@ p a:hover {
 .header-row {
   padding-top: 4vw;
   padding-bottom: 2vw; 
+  background-color: #FB3439;
+}
+
+.toc-row, .smile-row {
+  padding-top: 7vw;
 }
 
 .instruction {
   font-family: 'Pragmatica', 'OpenSans', sans-serif;
   font-size: 3.7vw;
-  border-right: 2px solid white;
+  border-right: 2px solid black;
+}
+
+.project-row {
+  padding-top: 7vw;
+}
+
+.people-row, .partners-row {
+  padding-top: 7vw;
 }
 
 
-
-.marquee-row {
-  height: 13vw;
-  background-image: url("./img/marq1.svg");
-  background-repeat: repeat-x;
-  background-size: 35vw;
-  animation: 10s anim1 infinite linear;
-}
-
-@keyframes anim1 {
-   from {
-      background-position: 0 center;
-   }
-   to {
-      background-position: 35vw center;
-   }
-}
-
-.marquee-2-row {
-  background-image: url("./img/marq2.svg");
-  background-repeat: repeat-x;
-  background-size: 65vw;
-  animation: 10s anim2 infinite linear;
-  height: 15vw;
-}
-
-@keyframes anim2 {
-   from {
-      background-position: 0 center;
-   }
-   to {
-      background-position: 65vw center;
-   }
-}
-
-.marquee-3-row {
-  background-image: url("./img/marq2.svg");
-  background-repeat: repeat-x;
-  background-size: 65vw;
-  animation: 12s anim3 infinite linear;
-  height: 15vw;
-}
-
-@keyframes anim3 {
-   from {
-      background-position: 0vw center;
-   }
-   to {
-      background-position: 65vw center;
-   }
-}
-
-
-
-
+/*
 .manifest-row, .who-row, .portfolio-row, .birzha-row, .volunteer-row, .mail-row{
   padding-bottom: 7vw;
 }
@@ -671,6 +656,7 @@ p a:hover {
 .partners-row {
   padding-bottom: 2vw;
 }
+*/
 
 .paricon-row {
   padding-bottom: 7vw !important;
@@ -728,7 +714,7 @@ p a:hover {
 }
 
 .button {
-  border: 2px solid white;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   margin-left: 0 !important;
@@ -740,9 +726,14 @@ p a:hover {
   margin: 0 auto;
 }
 
+.name {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .gallery {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -760,82 +751,13 @@ p a:hover {
 
 }
 
-.sp-force-hide {
-  display: none;
-}
-
-.sp-form[sp-id="156714"] {
-  display: block;
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  padding: 0 !important;
-}
-
-.sp-form[sp-id="156714"] input[type="checkbox"] {
-  display: inline-block;
-  opacity: 1;
-  visibility: visible;
-}
-
-.sp-form[sp-id="156714"] .sp-form-fields-wrapper {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.sp-form[sp-id="156714"] .sp-form-control {
-  font-size: 3vw;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  height: 2vw;
-  width: 100%;
-}
-
-.sp-form[sp-id="156714"] .sp-field label {
-  display: none;
-}
-
-.sp-form[sp-id="156714"] .sp-button-messengers {
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-}
-
-.sp-form[sp-id="156714"] .sp-button {
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  width: auto;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
-}
-
-.sp-form[sp-id="156714"] .sp-button-container {
-  text-align: left;
-  width: auto;
-  margin: auto 0;
-}
-
-.sp-message {
-  color: white !important;
-
+.gallery-row {
+  padding-top: 7vw;
 }
 
 ::selection {
-  color: #0f0f0f;
-  background-color: white;
+  color: white;
+  background-color: #FB3439;
 }
 
 
