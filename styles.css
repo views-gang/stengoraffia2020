@@ -981,3 +981,36 @@ p a:hover {
   top: 700vw;
   left: 21vw;
 }
+
+
+.ball::before {
+  position: absolute;
+  content: "";
+  height: 10vw;
+  width: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/ball.svg);
+  z-index: 3;
+  margin-top: -3vw;
+  margin-left: 60vw;
+}
+
+
+
+
+.dot::before {
+  position: absolute;
+  content: "";
+  height: 4vw;
+  width: 4vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/dot.svg);
+  z-index: 3;
+  margin-top: 9vw;
+  margin-left: 83vw;
+}
+

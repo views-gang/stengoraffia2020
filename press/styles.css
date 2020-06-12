@@ -597,6 +597,35 @@ li:before {
   margin-left: -5vw;
 }
 
+.excl::before {
+  position: absolute;
+  content: "";
+  width: 10vw;
+  height: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/excl.svg);
+  z-index: 3;
+  margin-top: -2vw;
+  margin-left: 52.5vw;
+}
+
+.eye::before {
+  position: absolute;
+  content: "";
+  width: 18vw;
+  height: 18vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./img/eye.svg);
+  z-index: 3;
+  margin-top: 6vw;
+  margin-left: 68vw;
+}
+
+
 .alright{
   text-align: right;
 }
@@ -784,14 +813,7 @@ li:before {
   background: url("./img/photo/1.jpg"),
               url("./img/photo/2.jpg"),
               url("./img/photo/3.jpg"),
-              url("./img/photo/4.jpg"),
-              url("./img/photo/5.jpg"),
-              url("./img/photo/6.jpg"),
-              url("./img/photo/7.jpg"),
-              url("./img/photo/8.jpg"),
-              url("./img/photo/9.jpg"),
-              url("./img/photo/10.jpg"),
-              url("./img/photo/11.jpg");
+              url("./img/photo/4.jpg");
 }
 
 [class*="overlay-"]  img {
