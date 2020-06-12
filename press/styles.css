@@ -437,6 +437,15 @@ START OF PROJECT
   font-stretch: normal
 }
 
+
+@font-face {
+  font-family: "PragmaticaBold";
+  src: url("../fonts/Pragmatica/Pragmatica-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   font-family: 'PragmaticaFine', 'OpenSans', sans-serif;
@@ -757,7 +766,7 @@ li:before {
 
 .name {
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PragmaticaBold', 'OpenSans', sans-serif;
 }
 
 .gallery {
@@ -828,54 +837,54 @@ li:before {
 
 .overlay-1 {
   top: 24vw;
-  left: 3.8vw;
+  left: 83vw;
 }
 
 
 .overlay-2 {
-  top: 115vw;
-  left: 6vw;
+  top: 33vw;
+  left: 8vw;
 }
 
 .overlay-3 {
-  top: 105vw;
-  left: 19vw;
+  top: 142vw;
+  left: 88vw;
 }
 
 .overlay-4 {
-  top: 190vw;
-  left: 84vw;
+  top: 200vw;
+  left: 9vw;
 }
 
 .overlay-5 {
-  top: 270vw;
-  left: 2vw;
+  top: 200vw;
+  left: -6vw;
 }
 
 .overlay-6 {
-  top: 290vw;
-  left: 16vw;
+  top: 280vw;
+  left: 94vw;
 }
 
 .overlay-7 {
-  top: 340vw;
-  left: 92vw;
+  top: 300vw;
+  left: 82vw;
 }
 
 .overlay-8 {
   top: 415vw;
-  left: 70vw;
+  left: 9vw;
 }
 
 .overlay-9 {
   top: 540vw;
-  left: 21vw;
+  left: 0vw;
 }
 
 
 .overlay-10 {
   top: 545vw;
-  left: -5vw;
+  left: 18vw;
 }
 
 
@@ -883,37 +892,38 @@ li:before {
   top: 700vw;
   left: 80vw;
 }
+
+
 .overlay-12 {
   top: 710vw;
-  left: 95vw;
+  left: -1vw;
 }
-
-
 .overlay-13 {
   top: 780vw;
   left: 17vw;
 }
+
+
+
 .overlay-14 {
   top: 793vw;
-  left: 2vw;
+  left: 95vw;
 }
-
-
 .overlay-15 {
   top: 413vw;
-  left: 85vw;
+  left: 80vw;
 }
 
 
 .overlay-16 {
   top: 795vw;
-  left: 21vw;
+  left: -10vw;
 }
 
 
 .overlay-17 {
-  top: 924vw;
-  left: 80vw;
+  top: 462vw;
+  left: 90vw;
 }
 
 .overlay-18 {
