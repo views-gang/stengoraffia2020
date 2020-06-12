@@ -714,7 +714,7 @@ li:before {
 }
 
 .button {
-  border: 2px solid black;
+  border: 0.2vw solid black;
   display: flex;
   justify-content: center;
   margin-left: 0 !important;
@@ -732,8 +732,8 @@ li:before {
 }
 
 .gallery {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 0.2vw solid black;
+  border-bottom: 0.2vw solid black;
 
   margin-left: 0 !important;
   margin-right: 0 !important;

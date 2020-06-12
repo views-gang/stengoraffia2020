@@ -728,7 +728,7 @@ p a:hover {
 }
 
 .button {
-  border: 2px solid white;
+  border: 0.2vw solid white;
   display: flex;
   justify-content: center;
   margin-left: 0 !important;
@@ -741,8 +741,8 @@ p a:hover {
 }
 
 .gallery {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 0.2vw solid white;
+  border-bottom: 0.2vw solid white;
 
   margin-left: 0 !important;
   margin-right: 0 !important;
